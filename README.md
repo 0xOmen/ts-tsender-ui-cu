@@ -1,3 +1,17 @@
+x1. Create a basic react/nextjs application
+-static! 2. Connect our wallet with a nicer connect button 3. Implement this function from the smart contract:
+
+```javascript
+function airdropERC20(
+    address tokenAddress,
+    address[] calldata recipientsc
+    uint256[] calldata amounts,
+    uint256 totalAmount
+)
+```
+
+4. Deploy to Fleek
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
