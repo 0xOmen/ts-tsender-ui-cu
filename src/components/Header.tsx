@@ -1,10 +1,11 @@
 "use client";
 
 import { ConnectButton } from "@rainbow-me/rainbowkit";
+import { ReactNode } from "react";
 import { FaGithub } from "react-icons/fa";
 import Image from "next/image";
 
-export default function Header() {
+export default function Header(props: { children: ReactNode }) {
   return (
     <nav className="px-8 py-4.5 border-b-[1px] border-zinc-100 flex flex-row justify-between items-center bg-white xl:min-h-[77px]">
       <div className="flex items-center gap-2.5 md:gap-6">
@@ -25,7 +26,7 @@ export default function Header() {
         The most gas efficient airdrop contract on earth, built in huff 🐎
       </h3>
       <div className="flex items-center gap-4">
-        <ConnectButton />
+        <ConnectButton>{props.children}</ConnectButton>
       </div>
     </nav>
   );
