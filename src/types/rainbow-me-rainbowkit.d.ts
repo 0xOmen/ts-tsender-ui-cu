@@ -7,4 +7,5 @@ declare module '@rainbow-me/rainbowkit' {
   }): any;
   
   export function RainbowKitProvider(props: { children: React.ReactNode }): JSX.Element;
+  export function ConnectButton(props: { children: React.ReactNode }): JSX.Element;
 } 

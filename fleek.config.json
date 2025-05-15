@@ -1,0 +1,9 @@
+{
+  "sites": [
+    {
+      "slug": "some-spring-substantial",
+      "distDir": ".next",
+      "buildCommand": "npm run build"
+    }
+  ]
+}
